@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Sinh Viên</title>
+    <!-- Liên kết tới file CSS -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <form class="student-form">
+           
+            <span class="badge-label">ĐĂNG KÝ MỚI</span>
+
+            <h2>FORM ĐĂNG KÝ SINH VIÊN</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Họ và Tên</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ và tên...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính</label>
+                <div class="inline-options">
+                    <label><input type="radio" name="gender" value="nam"> Nam</label>
+                    <label><input type="radio" name="gender" value="nu"> Nữ</label>
+                    <label><input type="radio" name="gender" value="khac"> Khác</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích</label>
+                <div class="inline-options">
+                    <label><input type="checkbox" name="hobby" value="laptrinh"> Lập trình</label>
+                    <label><input type="checkbox" name="hobby" value="thethao"> Thể thao</label>
+                    <label><input type="checkbox" name="hobby" value="amnhac"> Âm nhạc</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Chuyên ngành</label>
+                <select id="department">
+                    <option value="">-- Chọn ngành học --</option>
+                    <option value="tmdt">Thương mại điện tử</option>
+                    <option value="cntt">Công nghệ thông tin</option>
+                    <option value="httt">Hệ thống thông tin</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">Đăng ký</button>
+                <button type="reset" class="btn btn-reset">Làm lại</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
